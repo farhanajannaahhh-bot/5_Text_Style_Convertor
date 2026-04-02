@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(taskkill /PID 6228 /F)",
+      "Bash(cmd.exe:*)",
+      "Bash(curl -s -X POST http://localhost:3001/api/transform -H \"Content-Type: application/json\" -d \"{\\\\\"text\\\\\": \\\\\"Hello, how are you?\\\\\", \\\\\"tone\\\\\": \\\\\"Professional\\\\\"}\")",
+      "Bash(curl:*)"
+    ]
+  }
+}

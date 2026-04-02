@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F9FAFB; /* Light Background (Gray 50) */
+  --foreground: #1F2937; /* Text Primary (Gray 800) */
+  
+  --primary: #4F46E5; /* Indigo */
+  --secondary: #10B981; /* Emerald */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827; /* Dark Background (Gray 900) */
+    --foreground: #F9FAFB; /* Text Primary Light in Dark Mode */
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
